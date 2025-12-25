@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const Projects = () => {
+const Project = () => {
   const titleRef = useRef(null);
   const cardsRef = useRef([]);
 
@@ -41,9 +41,9 @@ const Projects = () => {
 
   const projects = [
     {
-      tag: 'Web Application',
-      name: 'Project Name 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+      tag: "Web Application",
+      name: "CYBERTRICKS",
+      description: "CyberTricks provides practical cybersecurity tips, ethical hacking insights, and essential tools to help you stay secure in the digital world.",
       special: false
     },
     {
@@ -85,11 +85,6 @@ const Projects = () => {
                 <span className="arrow">↗</span>
               </button>
             </div>
-            <div className="project-image">
-              <div className={`project-photo-placeholder ${project.special ? 'project-photo-special' : ''}`}>
-                project photo
-              </div>
-            </div>
           </div>
         ))}
       </div>
@@ -97,5 +92,5 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;
 

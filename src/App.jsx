@@ -3,10 +3,9 @@ import IntroScreen from './components/IntroScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { useStarfield } from './hooks/useStarfield';
-
+import Project from './components/Project';
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
   const starfieldRef = useStarfield(250);
@@ -35,7 +34,7 @@ function App() {
       <Navbar />
       <Hero showAnimation={introComplete} />
       <About />
-      <Projects />
+      <Project />
       <Footer />
     </div>
   );
