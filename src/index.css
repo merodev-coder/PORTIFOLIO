@@ -612,6 +612,9 @@ body {
     }
 }
 @media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
     .hero {
         padding: 0 30px;
     }
@@ -647,6 +650,7 @@ body {
     
     .project-card {
         grid-template-columns: 1fr;
+        height: fit-content;
     }
     
     .navbar {
