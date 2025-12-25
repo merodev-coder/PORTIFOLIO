@@ -80,10 +80,11 @@ const Project = () => {
               <p className={`project-description ${project.special ? 'project-description-special' : ''}`}>
                 {project.description}
               </p>
-              <button className={`btn-project ${project.special ? 'btn-project-special' : ''}`}>
+              <a href="https://694cbe05d57c3cb8b81fb23b--relaxed-heliotrope-4c06c4.netlify.app">
+                <button className={`btn-project ${project.special ? 'btn-project-special' : ''}`}>
                 view project
                 <span className="arrow">↗</span>
-              </button>
+              </button></a>
             </div>
           </div>
         ))}
